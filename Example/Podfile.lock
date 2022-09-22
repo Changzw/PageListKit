@@ -3,6 +3,7 @@ PODS:
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
   - Alamofire (5.6.2)
+  - MJRefresh (3.7.5)
   - Moya (15.0.0):
     - Moya/Core (= 15.0.0)
   - Moya/Core (15.0.0):
@@ -29,12 +30,14 @@ PODS:
   - TangramKit (1.4.2)
 
 DEPENDENCIES:
+  - MJRefresh
   - PageListKit (from `../`)
 
 SPEC REPOS:
   trunk:
     - Action
     - Alamofire
+    - MJRefresh
     - Moya
     - RxCocoa
     - RxRelay
@@ -49,6 +52,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Action: 47f1825511907b4fcd79dd7a7db9526c20f78018
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   PageListKit: 391b8069da5fc205c007ddf0757ea52127173331
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
@@ -57,6 +61,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   TangramKit: aad3ab8f9617418c9da96d59cddd71134ae8af83
 
-PODFILE CHECKSUM: c7291c9e7aed14372cef3517650689852318069e
+PODFILE CHECKSUM: 110d89f226364e26804498f680070d770c98115e
 
 COCOAPODS: 1.11.3

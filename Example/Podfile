@@ -4,7 +4,7 @@ platform :ios, '11.0'
 
 target 'PageListKit_Example' do
   pod 'PageListKit', :path => '../'
-
+  pod 'MJRefresh'
   target 'PageListKit_Tests' do
     inherit! :search_paths
     

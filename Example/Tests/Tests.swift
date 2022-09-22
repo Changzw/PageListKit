@@ -1,5 +1,4 @@
 import XCTest
-import PageListKit
 
 class Tests: XCTestCase {
     

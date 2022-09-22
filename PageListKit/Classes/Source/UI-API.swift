@@ -7,6 +7,7 @@
 
 import Foundation
 
+public
 protocol PageListView {
   associatedtype ContentView: UIScrollView
   var listView: ContentView { get }
@@ -15,6 +16,7 @@ protocol PageListView {
   var errorView: UIView { get }
 }
 
+public
 protocol Toastable {
   /// - Returns: token
   func show(message: String) -> String

@@ -8,6 +8,7 @@
 import Action
 import RxSwift
 
+public
 protocol DataLoader {
   associatedtype T
   var loadData: Action<Void, T> { get }
@@ -15,13 +16,22 @@ protocol DataLoader {
   var isLoading: Observable<Bool> {get}
 }
 
+public
 protocol Pageable {
+  associatedtype T: Collection
+  var loadMore: Action<Void, T> { get }
+  
   var offset: Int { get }
   var pageSize: Int { get }
   var hasMore: Bool { get }
 }
 
 //MARK: -
-protocol PageListDataLoader: DataLoader where T: Collection {
+public
+protocol ListDataLoader: DataLoader where T: Collection {
+  
+}
+
+protocol PageListDataLoader: DataLoader&Pageable where T: Collection {
   
 }
