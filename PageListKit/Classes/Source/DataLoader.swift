@@ -17,10 +17,9 @@ protocol DataLoader {
 }
 
 public
-protocol Pageable {
+protocol LoaderPageable {
   associatedtype T: Collection
   var loadMore: Action<Void, T> { get }
-  
   var offset: Int { get }
   var pageSize: Int { get }
   var hasMore: Bool { get }
@@ -32,6 +31,7 @@ protocol ListDataLoader: DataLoader where T: Collection {
   
 }
 
-protocol PageListDataLoader: DataLoader&Pageable where T: Collection {
+public
+protocol PageListDataLoader: DataLoader&LoaderPageable where T: Collection {
   
 }

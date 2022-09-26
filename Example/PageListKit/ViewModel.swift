@@ -12,10 +12,18 @@ import Action
 import RxSwift
 
 final class ViewModel: PageListDataLoader {
-  typealias T = Array<Int>
+  private(set) var offset: Int = 0
+  
+  let pageSize: Int = 30
+  
+  private(set) var hasMore: Bool = true
   
   var loadData: Action<Void, Array<Int>> = Action<Void, Array<Int>> {
-    return .just([])
+    .just(randomNumber(count: 20))
+  }
+  
+  var loadMore: Action<Void, Array<Int>> = Action<Void, Array<Int>> {
+    .just(randomNumber(count: 20))
   }
   
   var data: Observable<Array<Int>> {
@@ -28,3 +36,4 @@ final class ViewModel: PageListDataLoader {
 
   
 }
+

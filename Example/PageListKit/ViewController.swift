@@ -9,10 +9,13 @@
 import UIKit
 import SnapKit
 import RxCocoa
+import RxSwift
 
 final class ViewController: UIViewController {
   let tableView = UITableView()
   let viewModel: ViewModel
+  let bag = DisposeBag()
+  
   init(viewModel: ViewModel) {
     self.viewModel = viewModel
     super.init(nibName: nil, bundle: nil)
@@ -24,14 +27,20 @@ final class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.description())
+    tableView.rowHeight = UITableViewAutomaticDimension
+    
     view.backgroundColor = .cyan
     view.addSubview(tableView)
     tableView.snp.makeConstraints{
       $0.edges.equalToSuperview()
     }
     
-    
+    viewModel.data
+      .bind(to: tableView.rx.items(cellIdentifier:  UITableViewCell.description(), cellType: UITableViewCell.self)) { (row, element, cell) in
+        cell.textLabel?.text = "\(row)-\(element)"
+      }
+      .disposed(by: bag)
   }
-  
 }
 

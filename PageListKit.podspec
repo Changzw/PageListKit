@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PageListKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of PageListKit.'
 
 # This description is used to generate tags and improve search results.
@@ -39,18 +39,19 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 
-  s.dependency 'Moya'
-  s.dependency 'TangramKit'
+  # s.dependency 'Moya'
+  # s.dependency 'TangramKit'
   s.default_subspec='Source'
+  s.dependency 'Moya', '15.0.0'
 
   s.subspec 'Source' do |ss| 
     ss.source_files = 'PageListKit/Classes/Source/**/*'
-    ss.dependency 'RxSwift'
-    ss.dependency 'Action'
-    ss.dependency 'RxCocoa'
-    ss.dependency 'RxRelay'
-    ss.dependency 'SnapKit' 
-    # ss.dependency 'BasicKit'
+    ss.dependency 'RxSwift', '6.5'
+    ss.dependency 'Action', '5.0.0'
+    ss.dependency 'RxCocoa', '6.5'
+    ss.dependency 'RxRelay', '6.5'
+    ss.dependency 'SnapKit', '5.6.0'
+    ss.dependency 'BasicKit', '0.0.4'
   end 
   
 end

@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		88B1C2EF28DCC0B900024E9A /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B1C2EE28DCC0B900024E9A /* Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		6A0419EE829CEA9F15C3CDE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		70F72A2E84C08F2DB1C7DEF4 /* Pods_PageListKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageListKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A0411B8DE208FA804CFE2F /* Pods-PageListKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageListKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-PageListKit_Tests/Pods-PageListKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		88B1C2EE28DCC0B900024E9A /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		9B88F34C5F2341F5F95B9EED /* Pods-PageListKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageListKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PageListKit_Tests/Pods-PageListKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADD929D3D1681A6F8557E50A /* Pods-PageListKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageListKit_Example.release.xcconfig"; path = "Target Support Files/Pods-PageListKit_Example/Pods-PageListKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B7621BEC37A3A793F276774C /* Pods_PageListKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageListKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				88B1C2EE28DCC0B900024E9A /* Mock.swift */,
 			);
 			name = "Example for PageListKit";
 			path = PageListKit;
@@ -351,6 +354,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				07942E1628DC95960016E26D /* ViewModel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				88B1C2EF28DCC0B900024E9A /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
